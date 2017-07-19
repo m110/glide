@@ -14,7 +14,7 @@ import (
 // Lockfile represents a glide.lock file.
 type Lockfile struct {
 	Hash       string    `yaml:"hash"`
-	Updated    time.Time `yaml:"updated"`
+	Updated    time.Time `yaml:"-"`
 	Imports    Locks     `yaml:"imports"`
 	DevImports Locks     `yaml:"testImports"`
 }
